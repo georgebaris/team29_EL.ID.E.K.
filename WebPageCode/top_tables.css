@@ -1,0 +1,73 @@
+@font-face{
+	font-family: Montserrat;
+	src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	
+	font-family: Montserrat;
+}
+
+
+.top_tables{
+	box-sizing: border-box;
+	width: 800px;
+	background-color: #3275a8;
+	
+	border-radius: 5px;
+}
+
+.top_tables h1{
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	text-decoration: underline;
+	
+	padding-top: 10px;
+}
+
+.top_tables .table{
+	width: 95%;
+	margin: auto;
+	
+	background-color: white;
+	
+	border-radius: 5px;
+}
+
+.top_tables .row{
+}
+
+.top_tables .first_row .item{
+	font-weight: bold;
+}
+
+.top_tables .item{
+	display: inline-block;
+	text-align: center;
+	
+	font-size: 15px !important;
+}
+
+.top_tables .empty_bottom{
+	width: 100%;
+	height: 20px;
+}
+
+#top_researchers .item{
+	width: 49%;
+}
+
+#top_executives .item, #pairs .item{
+	width: 32%;
+}
+
+#no_deliv .item{
+	width: 49%;
+}
+
+#organizations_table .item{
+	width: 98%;
+}

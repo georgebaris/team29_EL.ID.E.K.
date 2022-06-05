@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> EL.ID.E.K.: Online </title>
+	<link rel = "stylesheet" href = "main_style.css" />
+	<link rel = "stylesheet" href = "insert_data.css" />
+</head>
+<body>
+	<div id = "top_banner">
+		<!-- Selections -->
+		<div id = "selections">
+			<div><a href = "elidek_main_page.html"> Available Projects </a></div>
+			<div><a href = "elidek_statistics.html"> Statistics </a></div>
+			<div><a href = "elidek_insert_data.html"> Manipulate Data </a></div>
+		</div>
+		<img src = "logo.svg" />
+	</div>
+	
+	<!-- Add researcher -->
+	<div class = "insert_data_container" id = "add_researcher">
+		<div class = "short_description"> Add researcher</div>
+		<div class = "form">
+			<div class = "field">
+				<span> Name: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Surname: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field date">
+				<span> Date of birth: </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Sex: </span>
+				<select>
+					<option value = "Male"> Male </option>
+					<option value = "Female"> Female </option>
+				</select>
+			</div>
+			<div class = "field">
+				<span> Works on projects: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Works on organization: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Add Researcher" onclick = "add_researcher()"> </input>
+	</div>
+	
+	<!-- Add project -->
+	<div class = "insert_data_container" id = "add_project">
+		<div class = "short_description"> Add project</div>
+		<div class = "form">
+			<div class = "field">
+				<span> Title: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Funds: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field date">
+				<span> Start Date: </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field date">
+				<span> End Date: </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+				<span class = "slash"> / </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Summary: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Managing Organization: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Scientific Fields: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Add Project" onclick = "add_project()"> </input>
+	</div>
+	
+	<!-- Add organization -->
+	<div class = "insert_data_container" id = "add_organization">
+		<div class = "short_description"> Add Organization </div>
+		<div class = "form">
+			<div class = "field">
+				<span> Name: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Abbreviation: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Address PC: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Address Street: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Address City: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Address Number: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Add Organization" onclick = "add_organization()"> </input>
+	</div>
+	
+	<!-- Add executive -->
+	<div class = "insert_data_container" id = "add_executive">
+		<div class = "short_description"> Add Executive </div>
+		<div class = "form">
+			<div class = "field">
+				<span> Name: </span>
+				<input type = "text"></input>
+			</div>
+			<div class = "field">
+				<span> Project: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Add Executive" onclick = "add_executive()"> </input>
+	</div>
+	
+	<!-- Delete project -->
+	<div class = "insert_data_container" id = "delete_project">
+		<div class = "short_description"> Delete project </div>
+		<div class = "form">
+			<div class = "field">
+				<span> Title: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Delete project" onclick = "delete_project()"> </input>
+	</div>
+	
+	<!-- Delete organization -->
+	<div class = "insert_data_container" id = "delete_organization">
+		<div class = "short_description"> Delete organization </div>
+		<div class = "form">
+			<div class = "field">
+				<span> Name: </span>
+				<input type = "text"></input>
+			</div>
+		</div>
+		<input class = "add" type = "button" value = "Delete organization" onclick = "delete_organization()"> </input>
+	</div>
+	
+	<script src = "add_researcher.js"></script>
+	<script src = "add_project.js"></script>
+	<script src = "add_organization.js"></script>
+	<script src = "add_executive.js"></script>
+	<script src = "delete.js"></script>
+</body>
+</html>

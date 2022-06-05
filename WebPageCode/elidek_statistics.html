@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> EL.ID.E.K.: Online </title>
+	<link rel = "stylesheet" href = "main_style.css" />
+	<link rel = "stylesheet" href = "top_tables.css" />
+</head>
+<body>
+	<div id = "top_banner">
+		<!-- Selections -->
+		<div id = "selections">
+			<div><a href = "elidek_main_page.html"> Available Projects </a></div>
+			<div><a href = "elidek_statistics.html"> Statistics </a></div>
+			<div><a href = "elidek_insert_data.html"> Manipulate Data </a></div>
+		</div>
+		<img src = "logo.svg" />
+	</div>
+	
+	<!-- Top executives -->
+	<div class = "top_tables" id = "top_executives">
+		<h1> Top 5 executives(3.7) </h1>
+		<div class = "table" id = "top_executive_table">
+		</div>
+		<div class = "empty_bottom"></div>
+	</div>
+	
+	<!-- Top young researchers -->
+	<div class = "top_tables" id = "top_researchers">
+		<h1> Top 10 young researchers(3.6) </h1>
+		<div class = "table" id = "top_researchers_table">
+		</div>
+		<div class = "empty_bottom"></div>
+	</div>
+	
+	<!-- Pairs of scientific fields -->
+	<div class = "top_tables" id = "pairs">
+		<h1> Top 3 pairs of fields appearing in projects(3.5) </h1>
+		<div class = "table" id = "pairs_table">
+		</div>
+		<div class = "empty_bottom"></div>
+	</div>
+	
+	<!-- Organizations -->
+	<div class = "top_tables" id = "organizations">
+		<h1> Organizations with same number of projects(3.4) </h1>
+		<div class = "table" id = "organizations_table">
+		</div>
+		<div class = "empty_bottom"></div>
+	</div>
+	
+	<!-- Researchers working on projects with no deliverables -->
+	<div class = "top_tables" id = "researchers_no_deliverable">
+		<h1> Researchers working on projects with no deliverable(3.8) </h1>
+		<div class = "table" id = "no_deliv">
+		</div>
+		<div class = "empty_bottom"></div>
+	</div>
+	
+	<script src = "top_executives.js"></script>
+	<script src = "top_young_researchers.js"></script>
+	<script src = "pairs_of_scientific_fields.js"> </script>
+	<script src = "organizations_with_same_number_of_projects.js"> </script>
+	<script src = "researchers_no_deliverable.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html>
+<head>
+	<title> EL.ID.E.K.: Online </title>
+	<link rel = "stylesheet" href = "main_style.css" />
+	<link rel = "stylesheet" href = "projects_available_container.css" />
+	<link rel = "stylesheet" href = "projects_per_field.css" />
+</head>
+<body>
+	<div id = "top_banner">
+		<!-- Selections -->
+		<div id = "selections">
+			<div><a href = "elidek_main_page.html"> Available Projects </a></div>
+			<div><a href = "elidek_statistics.html"> Statistics </a></div>
+			<div><a href = "elidek_insert_data.html"> Manipulate Data </a></div>
+		</div>
+		<img src = "logo.svg" />
+	</div>
+	
+	
+	<!-- Projects available -->
+	<div id = "projects_available_container">
+		<div class = "filters_container">
+			<div class = "filter" id = "filter_labels">
+				<div class = "filter_left_container">
+					<span> Filter Enable </span>
+				</div>
+				
+				<div class = "filter_right_container">
+					<span class = "first"> Sellection </span>
+				</div>
+			</div>
+
+			<div class = "filter" id = "filter_date">
+				<div class = "filter_left_container">
+					<input type = "checkbox" id = "date_checkbox" name = "filter_date" value = "filter_date"/>
+				</div>
+				<div class = "filter_right_container">
+					<div id = "start_date_div">
+						<span class = "first"> Starting Date </span>
+						<input type = "text" />
+						<span> / </span>
+						<input type = "text" />
+						<span> / </span>
+						<input type = "text" />
+					</div>
+				</div>
+				<div class = "error" id = "date_error">
+					Not a valid date
+				</div>
+			</div>
+			
+			<div class = "filter" id = "duration_filter">
+				<div class = "filter_left_container">
+					<input type = "checkbox" id = "duration_checkbox" name = "filter_date" value = "filter_date"/>
+				</div>
+				
+				<div class = "filter_right_container">
+					<div>
+						<span class = "first">Duration </span>
+						<input id = "duration_text" type = "text" />
+					</div>
+				</div>
+				
+				<div class = "error" id = "duration_error">
+					Not a valid duration
+				</div>
+			</div>
+			
+			<div class = "filter" id = "executive_filter">
+				<div class = "filter_left_container">
+					<input type = "checkbox" id = "executive_checkbox" name = "filter_date" value = "filter_date"/>
+				</div>
+				
+				<div class = "filter_right_container">
+					<div>
+						<span class = "first"> Executive name </span>
+						<input id = "executive_text" type = "text" />
+					</div>
+				</div>
+				
+				<div class = "error">
+					Not a valid executive name
+				</div>
+			</div>
+		</div>
+		
+		<div id = "apply_filters">
+			<input type = "button" value = "Apply Filters" onclick = "apply_filters()"/>
+		</div>
+		
+		<div id = "projects_found">
+			<div> Projects found </div>
+			<div id = "projects_found_container">
+			</div>
+		</div>
+	</div>
+	
+	<!-- Find projects on a scientific field -->
+	<div id = "projects_per_field">
+		<h1> Projects per scientific field(3.3) </h1>
+		<div id = "organization_selection">
+			<div> Scientific field name: </div>
+			<input type = "text" id = "field_name"></input>
+		</div>
+		
+		<div id = "find_per_field">
+			<input type = "button" value = "Find projects" onclick = "find_projects()"/>
+		</div>
+		
+		<div id = "projects_per_field_found">
+			<div> Projects found </div>
+			<div id = "projects_per_field_found_container">
+			</div>
+		</div>
+	</div>
+	
+	<!-- Project per researcher available -->
+	<div id = "researcher_per_project">
+		<div id = "researchers_found">
+			<div style = "font-weight: bold; text-decoration: underline;"> Projects per researcher </div>
+			<div id = "researcher_per_proj_cont">
+			</div>
+		</div>
+	</div>
+	
+	<script src = "projects_available_container.js"></script>
+	<script src = "projects_per_field.js"></script>
+	<script src = "projects_per_researchers.js"></script>
+</body>
+</html>

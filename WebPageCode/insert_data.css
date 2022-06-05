@@ -1,0 +1,79 @@
+@font-face{
+	font-family: Montserrat;
+	src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	
+	font-family: Montserrat;
+}
+
+
+.insert_data_container{
+	background-color: white;
+	
+	width: 600px;
+	
+	border-radius: 5px;
+	border: 10px solid #3275a8;
+	
+	margin-top: 30px;
+	margin-bottom: 50px;
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.insert_data_container .short_description{
+	text-align: center;
+	font-size: 25px;
+	
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.insert_data_container .form .field{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.insert_data_container .form .field span{
+	display: inline-block;
+	text-align: right;
+	width: 200px;
+}
+
+.insert_data_container .form .field input, .insert_data_container .form .field option{
+	display: inline-block;
+	
+	width: 200px;
+	
+	margin-left: 20px;
+}
+
+.insert_data_container .form .date span{
+	margin-right: 20px;
+}
+
+.insert_data_container .form .date input{
+	margin-top: 10px;
+	margin-left: 0;
+	
+	width: 50px;
+}
+
+.insert_data_container .form .date .slash{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 10px;
+	
+	width: 5px;
+}
+
+.insert_data_container .add{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+}

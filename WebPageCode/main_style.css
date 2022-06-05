@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	background-color: #8cb3d1;
+	
+	padding-bottom: 20px;
+}
+
+#top_banner{
+	background-color: #11446b;
+	
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	
+	box-shadow: 0 0 5px 5px #11446b;
+}
+
+#top_banner img{
+	margin: auto;
+	height: 80%;
+	
+	float: right;
+}
+
+#projects_available_container{
+	margin: auto;
+	position: relative;
+	top: 20px;
+	
+	display: block;
+}
+#projects_per_field{
+	margin: auto;
+	
+	left: 50%;
+	margin-top: 50px;
+	transform: translateX(-50%);
+}
+
+
+
+#selections{
+	float: left;
+	height: 100px;
+}
+
+#selections div{
+	float: left;
+	height: 100%;
+}
+
+
+#selections a{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	
+	text-decoration: none;
+	color: black;
+	
+	font-size: 20px;
+	
+	width: 150px;
+	
+	margin: auto;
+	
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#selections div:hover{
+	background-color: #032138;
+	cursor: pointer;
+}
+
+
+
+.top_tables{
+	margin: auto;
+}
+
+
+.insert_data_container{
+	margin: auto;
+}

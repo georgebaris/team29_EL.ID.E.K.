@@ -1,0 +1,269 @@
+@font-face{
+	font-family: Montserrat;
+	src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	font-size: 12px;
+	
+	font-family: Montserrat;
+}
+
+
+#projects_available_container{
+	width: 800px;
+	
+	background-color: #3275a8;
+	
+	border-radius: 5px;
+	
+}
+
+#researcher_per_project{
+	width: 800px;
+	
+	background-color: #3275a8;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	position: relative;
+	top: 800px;
+}
+
+.filter{
+	border-bottom: 1px solid black;
+}
+
+#filter_labels{
+	text-align: center;
+	height: 50px;
+}
+
+#filter_labels div{
+	height: 100%;
+}
+
+#filter_labels span{
+	display: block;
+	text-decoration: bold !important;
+	font-size: 16px !important;
+	height: 100%;
+}
+
+#filter_date{
+	height: 50px;
+}
+
+.filter_left_container{
+	display: inline-block;
+	width: 20%;
+	margin: auto;
+	
+	float: left;
+}
+
+#filter_date .filter_left_container input{
+}
+
+.filter_left_container input{
+	display: inline-block;
+	width: 100%;
+	
+	margin: auto;
+}
+
+.filter_right_container{
+	display: inline-block;
+}
+
+.filter_right_container .first{
+	display:inline-block;
+	width: 100px;
+}
+
+.filter_right_container input{
+	display:inline-block;
+	width: 50px;
+}
+
+
+#filter_date .filter_right_container input{
+	width: 70px;
+}
+
+#duration_filter, #executive_filter{
+	height: 30px;
+}
+
+#duration_filter .filter_right_container input, #executive_filter .filter_right_container input{
+	width: 200px !important;
+}
+
+
+
+#apply_filters{
+	width: 40%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+#apply_filters input{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+#projects_found{
+	padding-bottom: 20px;
+}
+
+#projects_found div{
+	font-size: 20px;
+	text-align: center;
+	
+	margin-top: 20px;
+}
+
+
+#projects_found_container{
+	display: block;
+	background-color: white;
+	
+	width: 90%;
+	height: 500px;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	overflow-y: scroll;
+}
+
+#projects_found_container .project{
+	font-size: 15px;
+	padding: 10px;
+	margin: 0;
+}
+
+#projects_found_container .project:hover{
+	background-color: #34ebe8;
+	cursor: pointer;
+}
+
+#projects_found_container .researchers{
+	display: none;
+	margin: 0;
+}
+
+#projects_found_container .cont{
+	margin: 0;
+}
+
+#projects_found_container .cont:hover .researchers{
+	display: block;
+}
+
+#projects_found_container .researcher{
+	font-size: 15px;
+	background-color: #a1a1a1;
+	padding: 5px;
+	
+	margin: 0;
+}
+
+
+
+
+
+#researchers_found{
+	padding-bottom: 20px;
+}
+
+#researchers_found div{
+	font-size: 20px;
+	text-align: center;
+	
+	margin-top: 20px;
+}
+
+
+#researcher_per_proj_cont{
+	display: block;
+	background-color: white;
+	
+	width: 90%;
+	height: 500px;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	overflow-y: scroll;
+}
+
+#researcher_per_proj_cont .project{
+	font-size: 15px;
+	padding: 10px;
+	margin: 0;
+}
+
+#researcher_per_proj_cont .project:hover{
+	background-color: #34ebe8;
+	cursor: pointer;
+}
+
+#researcher_per_proj_cont .researchers{
+	display: none;
+	margin: 0;
+}
+
+#researcher_per_proj_cont .cont{
+	margin: 0;
+}
+
+#researcher_per_proj_cont .cont:hover .researchers{
+	display: block;
+}
+
+#researcher_per_proj_cont .researcher{
+	font-size: 15px;
+	background-color: #a1a1a1;
+	padding: 5px;
+	
+	margin: 0;
+}
+
+
+
+
+
+
+
+.error{
+	display: none;
+	
+	position: absolute;
+	left: 101%;
+	width: 250px;
+	height: 30px;
+	
+	border: 1px solid #ff5340;
+	border-radius: 5px;
+	background-color: #ff5340;
+
+	
+	font-size: 15px;
+	
+	z-index: 1;
+	
+	padding: 5px;
+}
